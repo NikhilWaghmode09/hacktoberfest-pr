@@ -52,17 +52,8 @@ int main()
 	cin>>n;
 	int arr[n];
 	for(int i=0; i<n; cin>>arr[i++]);
-	// int isum[n];
-	// for(int i=0; i<n; i++)
-	// {
-		// isum[i] = zeroes(arr[i]);
-	// }
-	// for(int i=0; i<n; i++)
-		// cout<<isum[i]<<' ';
-	// cout<<'\n';
 	build(arr, n);
 	cout<<'\n';
-	// cout<<getsum(2);
 	int q;
 	cin>>q;
 	while(q--)
@@ -73,11 +64,4 @@ int main()
 		int ans = getsum(r)-getsum(l);
 		cout<<ans;
 	}
-	
-	// int sum[1000001]={0};
-	// sum[0] = isum[0];
-	// for(int i=1; i<n; i++)
-		// sum[i] = (isum[i]+sum[i-1]);
-	// cout<<'\n';
-	// for(int i=0; i<n; cout<<sum[i++]<<' ');
 }
